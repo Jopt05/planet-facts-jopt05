@@ -1,38 +1,518 @@
-.App {
-  text-align: center;
-}
+@media only screen and (min-width: 769px) {
+  .App {
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: #070625;
+    position: relative;
+    color: #fbfcff;
+    padding-bottom: 25px;
+  }
+  
+  .Background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('./assets/background-stars.svg');
+    background-size: contain;
+  }
+  
+  .Header {
+    padding: 20px 15px;
+    border-bottom: 1px solid #fbfcff;
+    display: flex;
+    z-index: 1000;
+    position: relative;
+  }
+  
+  .Header__Nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .Res__Nav {
+    display: none;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Res__Views {
+    display: none;
+  }
+  
+  .Header__Nav-element {
+    margin-right: 25px;
+    text-transform: uppercase;
+  }
+  
+  .Header__Nav-element-text {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .Header__Nav-element-text:hover {
+   color: #85859d;
+  }
+  
+  .Header h1,
+  .Body h1 {
+    text-transform: uppercase;
+  }
+  
+  .Body, .Info {
+    position: relative;
+    margin: 10px 12%;
+    outline: red;
+    display: flex;
+    z-index: 1000;
+  }
+  
+  .Body__Container {
+    padding: 5% 0%;
+    position: relative;
+  }
+  
+  .Body__Container .Planet__Image {
+    width: 60%;
+    object-fit: contain;
+  }
+
+  .Planet__Geology {
+    width: 30%;
+    object-fit: contain;
+    height: 0;
+    transition: all .2s ease-in-out;
+  }
+  
+  .Body__Container:first-child {
+    width: 60%;
+    /* outline: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Body__Container:last-child {
+    width: 40%;
+    /* outline: white solid 1px; */
+  }
+
+  .Body__Container_div {
+    height: auto;
+    transition: all .2s ease-in-out;
+  }
+  
+  .Body__Container_div h1 {
+    margin-bottom: 15px;
+  }
+  
+  .Body__Container_div p {
+    text-align: left;
+  }
+  
+  .Body__Container_div:nth-child(2) {
+    display: flex;
+  }
+  
+  .Body__Container_div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .Source {
+    color: #53536e;
+  }
+  
+  .Link {
+    color: #85859d;
+    margin-left: 15px;
+  }
+  
+  .Body__Container-button {
+   padding: 15px 15px;
+   border: 1px solid #85859d;
+   display: flex;
+   align-items: center;
+   text-transform: uppercase;
+   transition: all .2s ease-in-out;
+   cursor: pointer;
+  }
+  
+  .Body__Container-button:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .Body__Container-button-prefix {
+    margin-right: 15px;
+    color: #80809a;
+  }
+  
+  .Info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Info__Container {
+    padding: 15px 10px;
+    border: 1px solid #85859d;
+    width: 20%;
+  }
+  
+  .Info__Container-title {
+    color: #85859d;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .Info__Container-data {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .Planet__Geology-Active {
+    margin-top: 20px;
+    height: 200px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width: 768px) {
+  .App {
+    background-color: #070625;
+    position: relative;
+    color: #fbfcff;
+    padding-bottom: 25px;
+    overflow-x: hidden;
+  }
+  
+  .Background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url('./assets/background-stars.svg');
+    background-size: contain;
+  }
+  
+  .Header {
+    padding: 20px 20px;
+    border-bottom: 1px solid #fbfcff;
+    display: flex;
+    z-index: 2000;
+    position: relative;
+    align-items: center;
+  }
+  
+  .Header__Nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    display: none;
+  }
+
+  .Res__Nav {
+    position: absolute;
+    background-color: #070625;
+    left: 50%;
+    /* transform: translate(-50%, 0%); */
+    transform: translateX(200%);
+    z-index: 4000;
+    width: 100%;
+    top: 82px;
+    transition: all 1s ease-in-out;
+    height: auto;
+  }
+
+  .hidden {
+    transform: translateX(-50%);
+  }
+
+  .HeaderHidden {
+    background-color: #070625;
+  }
+
+  .Res__Nav-element-text {
+    text-align: center;
+  }
+
+  .Res__Nav-element {
+    padding: 15px 0px;
+    border: 1px solid #fbfcff;
+  }
+
+  .Header__Burger {
+    margin-left: auto;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Header__Burger span {
+    background-color: white;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+  }
+
+  .Header__Burger span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  .Header__Nav-element {
+    margin-right: 25px;
+    text-transform: uppercase;
+  }
+  
+  .Header__Nav-element-text {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .Header__Nav-element-text:hover {
+   color: #85859d;
+  }
+  
+  .Header h1,
+  .Body h1 {
+    text-transform: uppercase;
+  }
+
+  .Res__Views {
+    border-bottom: 1px solid #fbfcff;
+    display: flex;
+  }
+
+  .Res__Views-Container {
+    padding: 15px 10px;
+    flex-grow: 1;
+    z-index: 3000;
+  }
+
+  .Res__Views-Container-text {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .Res__Views-Container-text::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    left: 0;
+    top: 160%;
+    transition: all .2s ease-in-out;
+  }
+  
+  .Body, .Info {
+    position: relative;
+    margin: 10px 12%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  
+  .Body__Container {
+    padding: 5% 0%;
+  }
+  
+  .Body__Container .Planet__Image {
+    width: 60%;
+    object-fit: contain;
+  }
+
+  .Planet__Geology {
+    width: 30%;
+    object-fit: contain;
+    height: 0;
+    transition: all .2s ease-in-out;
+  }
+  
+  .Body__Container:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* .Body__Container:last-child {
+    width: 40%;
+    outline: white solid 1px;
+  } */
+  
+  .Body__Container_div h1 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .Body__Container_div p {
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .Body__Container_div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Body__Container_div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .Body__Container_div:last-child {
+    display: none;
+  }
+  
+  .Source {
+    color: #53536e;
+  }
+  
+  .Link {
+    color: #85859d;
+    margin-left: 15px;
+  }
+  
+  .Body__Container-button {
+   padding: 15px 15px;
+   border: 1px solid #85859d;
+   display: flex;
+   align-items: center;
+   text-transform: uppercase;
+   transition: all .2s ease-in-out;
+   cursor: pointer;
+  }
+  
+  .Body__Container-button:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .Body__Container-button-prefix {
+    margin-right: 15px;
+    color: #80809a;
+  }
+  
+  .Info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Info__Container {
+    padding: 15px 10px;
+    border: 1px solid #85859d;
+    display: flex;
+    align-items: center;
+  }
+
+  .Info__Container:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .Info__Container-title {
+    color: #85859d;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .Info__Container-data {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: auto;
+  }
+
+  .Planet__Geology-Active {
+    height: 200px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.ViewActive .Res__Views-Container-text::after {
+  background-color: #6c2fd4;
 }
 
-@keyframes App-logo-spin {
+.ButtonActive {
+  background-color: #6c2fd4;
+}
+
+.Planet__Image {
+  animation: floating 2s ease-in-out infinite forwards;
+}
+
+.Rotate {
+  animation: spin 1s ease-in-out forwards;
+}
+
+.goAway {
+  animation: goAway 2s ease-in-out forwards;
+}
+
+.Fade {
+  animation: Fade 2s ease-in-out forwards;
+}
+
+@keyframes spin {
   from {
-    transform: rotate(0deg);
+    position: relative;
+    transform: scale(1);
   }
+
+  50% {
+    transform: scale(0) rotate(360deg);
+  }
+
   to {
-    transform: rotate(360deg);
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes goAway {
+  from {
+    position: relative;
+  }
+  
+  20% {
+    transform: scale(.2);
+  }
+
+  50% {
+    transform: scale(.2) translateX(-3000px);
+  }
+
+  90% {
+    transform: scale(.2) translateX(0);
+  }
+  
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes Fade {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
