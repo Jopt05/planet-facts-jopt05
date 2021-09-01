@@ -13,7 +13,7 @@ const Header = () => {
             <div className="Header__Container">
                 <h1>The planets</h1>
             </div>
-            <div className="Header__Burger" onClick={ () => setResponsiveMenu(!ResponsiveMenu) }>
+            <div className={ `Header__Burger ${ ResponsiveMenu ? 'Transformed' : '' }` } onClick={ () => setResponsiveMenu(!ResponsiveMenu) }>
                 <span></span>
                 <span></span>
                 <span></span>
