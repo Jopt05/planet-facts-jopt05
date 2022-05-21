@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/planet-facts-jopt05/static/css/main.68c5ac13.chunk.css",
-    "main.js": "/planet-facts-jopt05/static/js/main.7041939a.chunk.js",
-    "main.js.map": "/planet-facts-jopt05/static/js/main.7041939a.chunk.js.map",
+    "main.css": "/planet-facts-jopt05/static/css/main.bdb1ffc6.chunk.css",
+    "main.js": "/planet-facts-jopt05/static/js/main.f305ff37.chunk.js",
+    "main.js.map": "/planet-facts-jopt05/static/js/main.f305ff37.chunk.js.map",
     "runtime-main.js": "/planet-facts-jopt05/static/js/runtime-main.451547c0.js",
     "runtime-main.js.map": "/planet-facts-jopt05/static/js/runtime-main.451547c0.js.map",
     "static/js/2.9ccd4aea.chunk.js": "/planet-facts-jopt05/static/js/2.9ccd4aea.chunk.js",
     "static/js/2.9ccd4aea.chunk.js.map": "/planet-facts-jopt05/static/js/2.9ccd4aea.chunk.js.map",
     "index.html": "/planet-facts-jopt05/index.html",
-    "static/css/main.68c5ac13.chunk.css.map": "/planet-facts-jopt05/static/css/main.68c5ac13.chunk.css.map",
+    "static/css/main.bdb1ffc6.chunk.css.map": "/planet-facts-jopt05/static/css/main.bdb1ffc6.chunk.css.map",
     "static/js/2.9ccd4aea.chunk.js.LICENSE.txt": "/planet-facts-jopt05/static/js/2.9ccd4aea.chunk.js.LICENSE.txt",
     "static/media/App.css": "/planet-facts-jopt05/static/media/background-stars.f6233a6a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.451547c0.js",
     "static/js/2.9ccd4aea.chunk.js",
-    "static/css/main.68c5ac13.chunk.css",
-    "static/js/main.7041939a.chunk.js"
+    "static/css/main.bdb1ffc6.chunk.css",
+    "static/js/main.f305ff37.chunk.js"
   ]
 }
