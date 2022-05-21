@@ -1,8 +1,7 @@
 @media only screen and (min-width: 769px) {
   .App {
     /* width: 100vw; */
-    height: 100vh;
-    background-color: #070625;
+    /* height: 1024px; */
     position: relative;
     color: #fbfcff;
     padding-bottom: 25px;
